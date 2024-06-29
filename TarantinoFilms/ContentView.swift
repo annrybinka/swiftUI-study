@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  TarantinoFilms
-//
-//  Created by Zhukova on 29.06.2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
