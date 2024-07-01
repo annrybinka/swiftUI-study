@@ -11,6 +11,14 @@
 		66FF010D2C3048D500560472 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF010C2C3048D500560472 /* ContentView.swift */; };
 		66FF010F2C3048D600560472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FF010E2C3048D600560472 /* Assets.xcassets */; };
 		66FF01122C3048D600560472 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FF01112C3048D600560472 /* Preview Assets.xcassets */; };
+		66FF011B2C3049B800560472 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF011A2C3049B800560472 /* Post.swift */; };
+		66FF011D2C3049E400560472 /* FilmsPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF011C2C3049E400560472 /* FilmsPosts.swift */; };
+		66FF011F2C304A0700560472 /* FilmsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF011E2C304A0700560472 /* FilmsListView.swift */; };
+		66FF01212C304A2E00560472 /* FilmRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF01202C304A2E00560472 /* FilmRowView.swift */; };
+		66FF01232C304A4F00560472 /* FilmDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF01222C304A4F00560472 /* FilmDetailsView.swift */; };
+		66FF01262C304AA700560472 /* MyMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF01252C304AA700560472 /* MyMood.swift */; };
+		66FF01282C304AC500560472 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF01272C304AC500560472 /* SettingsView.swift */; };
+		66FF012A2C304AED00560472 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF01292C304AED00560472 /* HelloView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		66FF010C2C3048D500560472 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		66FF010E2C3048D600560472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66FF01112C3048D600560472 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66FF011A2C3049B800560472 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		66FF011C2C3049E400560472 /* FilmsPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsPosts.swift; sourceTree = "<group>"; };
+		66FF011E2C304A0700560472 /* FilmsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsListView.swift; sourceTree = "<group>"; };
+		66FF01202C304A2E00560472 /* FilmRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRowView.swift; sourceTree = "<group>"; };
+		66FF01222C304A4F00560472 /* FilmDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsView.swift; sourceTree = "<group>"; };
+		66FF01252C304AA700560472 /* MyMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMood.swift; sourceTree = "<group>"; };
+		66FF01272C304AC500560472 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		66FF01292C304AED00560472 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,7 @@
 			children = (
 				66FF010A2C3048D500560472 /* TarantinoFilmsApp.swift */,
 				66FF010C2C3048D500560472 /* ContentView.swift */,
+				66FF01182C30498600560472 /* Tabs */,
 				66FF010E2C3048D600560472 /* Assets.xcassets */,
 				66FF01102C3048D600560472 /* Preview Content */,
 			);
@@ -65,6 +82,37 @@
 				66FF01112C3048D600560472 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66FF01182C30498600560472 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				66FF01242C304A8B00560472 /* Settings */,
+				66FF01192C30498E00560472 /* FilmsList */,
+				66FF01292C304AED00560472 /* HelloView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		66FF01192C30498E00560472 /* FilmsList */ = {
+			isa = PBXGroup;
+			children = (
+				66FF011A2C3049B800560472 /* Post.swift */,
+				66FF011C2C3049E400560472 /* FilmsPosts.swift */,
+				66FF011E2C304A0700560472 /* FilmsListView.swift */,
+				66FF01202C304A2E00560472 /* FilmRowView.swift */,
+				66FF01222C304A4F00560472 /* FilmDetailsView.swift */,
+			);
+			path = FilmsList;
+			sourceTree = "<group>";
+		};
+		66FF01242C304A8B00560472 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				66FF01252C304AA700560472 /* MyMood.swift */,
+				66FF01272C304AC500560472 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66FF01232C304A4F00560472 /* FilmDetailsView.swift in Sources */,
+				66FF011B2C3049B800560472 /* Post.swift in Sources */,
+				66FF011F2C304A0700560472 /* FilmsListView.swift in Sources */,
+				66FF012A2C304AED00560472 /* HelloView.swift in Sources */,
+				66FF01282C304AC500560472 /* SettingsView.swift in Sources */,
 				66FF010D2C3048D500560472 /* ContentView.swift in Sources */,
+				66FF01262C304AA700560472 /* MyMood.swift in Sources */,
 				66FF010B2C3048D500560472 /* TarantinoFilmsApp.swift in Sources */,
+				66FF011D2C3049E400560472 /* FilmsPosts.swift in Sources */,
+				66FF01212C304A2E00560472 /* FilmRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
