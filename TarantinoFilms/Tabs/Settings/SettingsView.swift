@@ -1,12 +1,18 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Environment(\.colorScheme) var colorScheme
     @State private var isMoodShowed = true
     @State private var mood: MyMood = .normal
     @State private var progress: Float = 50
     
     var body: some View {
         Form {
+            Section {
+                Text("\(colorScheme == .dark ? "Dark Theme" : "Light Theme")") +
+                Text(" enabled")
+            }
+            
             Section {
                 Toggle("Показать своё настроение", isOn: $isMoodShowed.animation())
                 if isMoodShowed {
