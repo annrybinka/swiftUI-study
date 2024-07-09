@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66522A7A2C3D7A67006A8AC8 /* OptionalTitleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66522A792C3D7A67006A8AC8 /* OptionalTitleWrapper.swift */; };
 		66FF010B2C3048D500560472 /* TarantinoFilmsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF010A2C3048D500560472 /* TarantinoFilmsApp.swift */; };
 		66FF010D2C3048D500560472 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF010C2C3048D500560472 /* ContentView.swift */; };
 		66FF010F2C3048D600560472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FF010E2C3048D600560472 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66522A792C3D7A67006A8AC8 /* OptionalTitleWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalTitleWrapper.swift; sourceTree = "<group>"; };
 		66FF01072C3048D500560472 /* TarantinoFilms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarantinoFilms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FF010A2C3048D500560472 /* TarantinoFilmsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarantinoFilmsApp.swift; sourceTree = "<group>"; };
 		66FF010C2C3048D500560472 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				66FF010A2C3048D500560472 /* TarantinoFilmsApp.swift */,
 				66FF010C2C3048D500560472 /* ContentView.swift */,
 				66FF012B2C32FFCA00560472 /* ColorTheme.swift */,
+				66522A792C3D7A67006A8AC8 /* OptionalTitleWrapper.swift */,
 				66FF01182C30498600560472 /* Tabs */,
 				66FF010E2C3048D600560472 /* Assets.xcassets */,
 				66FF01102C3048D600560472 /* Preview Content */,
@@ -201,6 +204,7 @@
 				66FF011F2C304A0700560472 /* FilmsListView.swift in Sources */,
 				66FF012A2C304AED00560472 /* HelloView.swift in Sources */,
 				66FF01282C304AC500560472 /* SettingsView.swift in Sources */,
+				66522A7A2C3D7A67006A8AC8 /* OptionalTitleWrapper.swift in Sources */,
 				66FF010D2C3048D500560472 /* ContentView.swift in Sources */,
 				66FF01262C304AA700560472 /* MyMood.swift in Sources */,
 				66FF010B2C3048D500560472 /* TarantinoFilmsApp.swift in Sources */,
