@@ -8,7 +8,6 @@ struct FilmDetailsView: View {
             post.image
                 .resizable()
                 .scaledToFit()
-                .padding(.top, 12)
                 .shadow(radius: 5)
             VStack(alignment: .leading) {
                 Text(post.subtitle)
@@ -20,7 +19,6 @@ struct FilmDetailsView: View {
             }
             .padding()
         }
-        .navigationTitle(post.title)
         .background(Color(.systemGray6))
     }
 }

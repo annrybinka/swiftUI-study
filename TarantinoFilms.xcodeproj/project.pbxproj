@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66522A7A2C3D7A67006A8AC8 /* OptionalTitleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66522A792C3D7A67006A8AC8 /* OptionalTitleWrapper.swift */; };
 		66FF010B2C3048D500560472 /* TarantinoFilmsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF010A2C3048D500560472 /* TarantinoFilmsApp.swift */; };
 		66FF010D2C3048D500560472 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF010C2C3048D500560472 /* ContentView.swift */; };
 		66FF010F2C3048D600560472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FF010E2C3048D600560472 /* Assets.xcassets */; };
@@ -19,9 +20,11 @@
 		66FF01262C304AA700560472 /* MyMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF01252C304AA700560472 /* MyMood.swift */; };
 		66FF01282C304AC500560472 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF01272C304AC500560472 /* SettingsView.swift */; };
 		66FF012A2C304AED00560472 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF01292C304AED00560472 /* HelloView.swift */; };
+		66FF012C2C32FFCA00560472 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF012B2C32FFCA00560472 /* ColorTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66522A792C3D7A67006A8AC8 /* OptionalTitleWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalTitleWrapper.swift; sourceTree = "<group>"; };
 		66FF01072C3048D500560472 /* TarantinoFilms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarantinoFilms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FF010A2C3048D500560472 /* TarantinoFilmsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarantinoFilmsApp.swift; sourceTree = "<group>"; };
 		66FF010C2C3048D500560472 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		66FF01252C304AA700560472 /* MyMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMood.swift; sourceTree = "<group>"; };
 		66FF01272C304AC500560472 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		66FF01292C304AED00560472 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		66FF012B2C32FFCA00560472 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 			children = (
 				66FF010A2C3048D500560472 /* TarantinoFilmsApp.swift */,
 				66FF010C2C3048D500560472 /* ContentView.swift */,
+				66FF012B2C32FFCA00560472 /* ColorTheme.swift */,
+				66522A792C3D7A67006A8AC8 /* OptionalTitleWrapper.swift */,
 				66FF01182C30498600560472 /* Tabs */,
 				66FF010E2C3048D600560472 /* Assets.xcassets */,
 				66FF01102C3048D600560472 /* Preview Content */,
@@ -87,9 +93,9 @@
 		66FF01182C30498600560472 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				66FF01242C304A8B00560472 /* Settings */,
 				66FF01192C30498E00560472 /* FilmsList */,
-				66FF01292C304AED00560472 /* HelloView.swift */,
+				66FF012D2C32FFED00560472 /* Hello */,
+				66FF01242C304A8B00560472 /* Settings */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -113,6 +119,14 @@
 				66FF01272C304AC500560472 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		66FF012D2C32FFED00560472 /* Hello */ = {
+			isa = PBXGroup;
+			children = (
+				66FF01292C304AED00560472 /* HelloView.swift */,
+			);
+			path = Hello;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +204,12 @@
 				66FF011F2C304A0700560472 /* FilmsListView.swift in Sources */,
 				66FF012A2C304AED00560472 /* HelloView.swift in Sources */,
 				66FF01282C304AC500560472 /* SettingsView.swift in Sources */,
+				66522A7A2C3D7A67006A8AC8 /* OptionalTitleWrapper.swift in Sources */,
 				66FF010D2C3048D500560472 /* ContentView.swift in Sources */,
 				66FF01262C304AA700560472 /* MyMood.swift in Sources */,
 				66FF010B2C3048D500560472 /* TarantinoFilmsApp.swift in Sources */,
 				66FF011D2C3049E400560472 /* FilmsPosts.swift in Sources */,
+				66FF012C2C32FFCA00560472 /* ColorTheme.swift in Sources */,
 				66FF01212C304A2E00560472 /* FilmRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

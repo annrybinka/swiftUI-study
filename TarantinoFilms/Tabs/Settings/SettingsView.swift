@@ -1,12 +1,28 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Environment(\.colorScheme) var colorScheme
+    @Binding var titleOn: Bool
     @State private var isMoodShowed = true
     @State private var mood: MyMood = .normal
     @State private var progress: Float = 50
     
     var body: some View {
         Form {
+            Section {
+                Text("\(colorScheme == .dark ? "Dark Theme" : "Light Theme")") +
+                Text(" enabled")
+            }
+            
+            Section {
+                Toggle("Show title in list", isOn: $titleOn.animation())
+                if titleOn {
+                    Text("Navigation title enabled")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
+            }
+            
             Section {
                 Toggle("Показать своё настроение", isOn: $isMoodShowed.animation())
                 if isMoodShowed {
@@ -33,5 +49,5 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView()
+    SettingsView(titleOn: .constant(true))
 }
