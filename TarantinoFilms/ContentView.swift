@@ -2,16 +2,17 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("titleOn") private var titleOn = true
+    @State private var choosenPost: Post? = nil
     
     var body: some View {
         TabView() {
-            FilmsListView(titleOn: titleOn)
+            FilmsListView(titleOn: titleOn, choosenPost: $choosenPost)
                 .tabItem {
                     Label("Films", systemImage: "airplayvideo")
                 }
-            HelloView()
+            FilmFactsView(post: choosenPost)
                 .tabItem {
-                    Label("Hello", systemImage: "person.circle")
+                    Label("Interesting facts", systemImage: "chart.pie")
                 }
             SettingsView(titleOn: $titleOn)
                 .tabItem {

@@ -6,4 +6,6 @@ struct Post: Identifiable {
     let subtitle: String
     let description: String
     let image: Image
+    let date: Int
+    let facts: String
 }
