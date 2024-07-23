@@ -6,25 +6,10 @@ struct FilmsStatistic: Identifiable {
     let filmsNumber: Int
 }
 
-let filmsStatistic = [
-    FilmsStatistic(
-        id: UUID().uuidString,
-        decade: 1980,
-        filmsNumber: 2
-    ),
-    FilmsStatistic(
-        id: UUID().uuidString,
-        decade: 1990,
-        filmsNumber: 4
-    ),
-    FilmsStatistic(
-        id: UUID().uuidString,
-        decade: 2000,
-        filmsNumber: 7
-    ),
-    FilmsStatistic(
-        id: UUID().uuidString,
-        decade: 2010,
-        filmsNumber: 3
-    )
-]
+let filmsStatistic = [(1980, 2), (1990, 4), (2000, 7), (2010, 3)].map {
+        FilmsStatistic(
+            id: UUID().uuidString,
+            decade: $0.0,
+            filmsNumber: $0.1
+        )
+    }

@@ -27,7 +27,7 @@ struct FilmFactsView: View {
                         )
                     )
                     .annotation(position: .overlay) {
-                        Text("фильмы\n \(film.decade)-х")
+                        Text("фильмы\n \(String(film.decade))-х")
                     }
                 }
                 .frame(height: 320)
