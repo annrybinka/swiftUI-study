@@ -1,20 +1,26 @@
 import SwiftUI
+import SpriteKit
 
 struct FilmDetailsView: View {
     var post: Post
+    @Binding var choosenPost: Post?
     
     var body: some View {
-        ScrollView {
-            post.image
-                .resizable()
-                .scaledToFit()
-                .shadow(radius: 5)
+        choosenPost = post
+        return ScrollView {
             VStack(alignment: .leading) {
-                Text(post.subtitle)
-                    .font(.title3)
-                    .fontWeight(.light)
-                    .foregroundColor(.gray)
-                Divider()
+                HStack {
+                    Text(post.subtitle)
+                        .font(.title3)
+                        .foregroundColor(.gray)
+                    post.image
+                        .resizable()
+                        .scaledToFit()
+                        .shadow(radius: 5)
+                        .frame(width: 170)
+                }
+                .padding()
+                
                 Text(post.description)
             }
             .padding()
@@ -24,5 +30,5 @@ struct FilmDetailsView: View {
 }
 
 #Preview {
-    FilmDetailsView(post: filmsPosts[0])
+    FilmDetailsView(post: filmsPosts[0], choosenPost: .constant(filmsPosts[0]))
 }

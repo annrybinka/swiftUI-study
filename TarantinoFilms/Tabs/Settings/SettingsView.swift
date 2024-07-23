@@ -35,14 +35,18 @@ struct SettingsView: View {
                             }
                         }
                         .pickerStyle(.segmented)
+                        Text("вооот настолько")
+                            .padding(.top, 20)
+                        Slider(value: $progress, in: 20...150)
+                            .padding()
+                            .tint(Color.green)
+                        TimelineView(.animation) { context in
+                            Image(systemName: mood.imageSystemName)
+                                .font(.system(size: CGFloat(progress)))
+                                .shadow(radius: 5)
+                        }
                     }
                 }
-            }
-            
-            Section {
-                Slider(value: $progress)
-                    .padding()
-                    .tint(Color.green)
             }
         }
     }

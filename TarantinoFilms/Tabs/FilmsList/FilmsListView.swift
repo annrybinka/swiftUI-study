@@ -2,12 +2,13 @@ import SwiftUI
 
 struct FilmsListView: View {
     var titleOn: Bool
+    @Binding var choosenPost: Post?
     
     var body: some View {
         NavigationView {
             List(filmsPosts) { post in
                 NavigationLink {
-                    FilmDetailsView(post: post)
+                    FilmDetailsView(post: post, choosenPost: $choosenPost)
                         .optionalTitle(post.title, isShow: titleOn)
                 } label: {
                     FilmRowView(post: post)
@@ -20,5 +21,5 @@ struct FilmsListView: View {
 }
 
 #Preview {
-    FilmsListView(titleOn: true)
+    FilmsListView(titleOn: true, choosenPost: .constant(filmsPosts[0]))
 }
